@@ -38,7 +38,7 @@ public:
                (sps.ACLineStatus == 0);
     }
 
-    bool isNeedUnplugIn(int threshold = 50) const {
+    bool isNeedUnplugIn(int threshold = 95) const {
         SYSTEM_POWER_STATUS sps{};
         if (!getStatus(sps)) return false;
 
